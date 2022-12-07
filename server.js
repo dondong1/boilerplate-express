@@ -20,7 +20,7 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
   app.get("/", (req, res) => {
-  res.send("Hello Express");
+  res.sendFile(__dirname + "/public/index.html");
 });
 }
 
